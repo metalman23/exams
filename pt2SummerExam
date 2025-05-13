@@ -1,0 +1,10 @@
+travel = int(input("please enter distance in km: "))
+people = int(input("please enter the amount of people: "))
+
+if people > 4:
+    print ("sorry, too many people")
+if people <= 4:
+    personCost = people*2.5
+    distanceCost = travel*0.78
+    price = distanceCost+personCost
+    print("this ride will cost €", price)
