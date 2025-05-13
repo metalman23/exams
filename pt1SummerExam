@@ -1,0 +1,62 @@
+students = [45,97,9,10,8,85,64,56,1,4,25,36,78]
+students2 = []
+counter = 0
+counter2 = 0
+mean = 0
+
+missing = int(input("please enter test score: "))
+students.append(missing)
+
+for i in students:
+    print (i)
+    counter += 1
+    
+print ("there are ", counter, " items in the list")
+
+print (students)
+
+for i in students:
+    if i > 9:
+        students2.append(i)
+        counter2 += 1
+
+print ("\n", students2)
+
+students2.sort()
+students2.reverse()
+
+print ("\n", students2)
+
+for i in students2:
+    mean += i
+    
+average = mean//counter2
+
+print("\n the mean score is: ", average, "\n the highest grade is ", students2[0], "\n the lowest grade is ", students2[-1])
+
+for i in students:
+    print (i)
+    counter += 1
+    
+print ("there are ", counter, " items in the list")
+
+print (students)
+
+for i in students:
+    if i > 9:
+        students2.append(i)
+        counter2 += 1
+
+print ("\n", students2)
+
+students2.sort()
+students2.reverse()
+
+print ("\n", students2)
+
+for i in students2:
+    mean += i
+    
+average = mean//counter2
+
+print("\n the mean score is: ", average, "\n the highest grade is ", students2[0], "\n the lowest grade is ", students2[-1])
